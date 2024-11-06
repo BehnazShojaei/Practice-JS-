@@ -18,4 +18,8 @@ const substract = (step) => {
   
   };
 
-  
+
+ const reset = () => {
+  let numberElement = document.getElementById("number");
+  numberElement.innerText = 0;
+};
