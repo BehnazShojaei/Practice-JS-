@@ -1,5 +1,5 @@
 body {
-    background-color: #cb0162;
+    background-color: #6291de;
     font-family: sans-serif;
     color: #062e03;
     text-align: center;
@@ -24,7 +24,9 @@ body {
 
 input[type="button"] {
     border: 1px solid #062e03;
-    background-color: #cb0162;
+    background-color: #341ad9;
+    justify-content: center;
+
     color: #fff;
     border-radius: 3px;
     padding: 2px;

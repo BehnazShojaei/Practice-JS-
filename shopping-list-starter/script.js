@@ -19,7 +19,7 @@ const addItem = () => {
 
     let item = document.getElementById("new-item-text").value;
     console.log(item);
-    shoppingListItems = [shoppingListItems, item];
+    shoppingListItems = [...shoppingListItems, item];
     // if not ... the output will be the list of previous items 
     // shoppingListItems.push(item) 
     // using push to update the list
