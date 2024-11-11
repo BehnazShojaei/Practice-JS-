@@ -1,5 +1,5 @@
 body {
-    background-color: #070d0d;
+    background-color: #1e362c;
     font-family: sans-serif;
     color: #fff;
 }
@@ -13,7 +13,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid #b30049;
+    border: 2px solid #d35a14;
     padding: 2px;
     margin: 2px;
     color: #070d0d;
@@ -45,7 +45,7 @@ input[type="button"]#new-task-button {
 }
 
 input[type="button"] {
-    background: #b30049;
+    background: #d62828;
     color: #fff;
 }
 
