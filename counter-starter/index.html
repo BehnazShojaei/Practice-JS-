@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <title>Counter</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <p id="number">0</p>
+            <div id="button-wrapper">
+                <input type="button" value="+1" id="addition" onclick="add(1)" />
+                <input type="button" value="+10" id="addition" onclick="add(10)" />
+                <input type="button" value="-1" id="substraction" onclick="substract(1)" />
+                <input type="button" value="-10" id="substraction" onclick="substract(10)" />
+                <input type="button" value="Reset" id="Reset" onclick="reset()" />
+
+                <input type="button" value="+" id="Add" onclick="add()" />
+                <input type="button" value="-" id="Substract" onclick="substract()" />
+                <!-- <input type="button" value="Multiply" id="Multiply" onclick="reset()" />
+                <input type="button" value="Divide" id="Divide" onclick="reset()" /> -->
+
+                <input type="text" id="text-box" placeholder="add-your-number" onclick="customInput()"/>
+
+            </div>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>
