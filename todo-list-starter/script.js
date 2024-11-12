@@ -1,5 +1,7 @@
 let todoTasks = ["Walk Chilli", "Make Dinner"];
 let todoTasksStatus = [false, true];
+let todoImportance = [false, true];
+
 // updateTodoList();
 
 // const todoList = document.getElementById("todo-list");
@@ -30,8 +32,13 @@ const createNewTodoItemElement = (task, index) => {
 
     // Apply a CSS class to the completed items
     if (todoTasksStatus[index] == true) {
-    newTodoTaskTextElement.classList.add("complete");
+        newTodoTaskTextElement.classList.add("complete");
     }  
+
+    if (todoImportance[index] == true) {
+        newTodoTaskElement.classList.add("Important");
+
+    }
 
     // Create a <li> element to contain the paragraph
     const newTodoTaskElement = document.createElement("li");
@@ -43,7 +50,19 @@ const createNewTodoItemElement = (task, index) => {
     completeButtonElement.onclick = function () {
     toggleComplete(index);
     };
+
     newTodoTaskElement.appendChild(completeButtonElement);
+
+
+    const importantButtonElement = document.createElement("input");
+    importantButtonElement.type = "button";
+    importantButtonElement.value = "Important";
+    importantButtonElement.onclick = function () {
+        toggleComplete(index);
+    };
+
+    newTodoTaskElement.appendChild(importantButtonElement);
+
     return newTodoTaskElement;
 };
 
@@ -63,8 +82,21 @@ updateTodoList();
 
 
 const addTask = () => {
-
+     const newTask = document.getElementById("new-task-text");
+    if (newTask.value) {
+        todoTasks.push(newTask.value);
+        todoTasksStatus.push(false);
+        newTask.value = "";
+        updateTodoList();
+    } 
 };
+
+
+
+
+// Mark items as important.
+
+
 
 
 
