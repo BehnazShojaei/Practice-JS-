@@ -53,6 +53,9 @@ input[type="button"] {
     text-decoration: line-through;
 }
 .important {
-    color: red;
+    color: rgb(0, 255, 76);
     font-weight: bold;
+
 }
+
+

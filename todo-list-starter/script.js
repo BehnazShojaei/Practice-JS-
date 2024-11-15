@@ -2,19 +2,6 @@ let todoTasks = ["Walk Chilli", "Make Dinner"];
 let todoTasksStatus = [false, true];
 let todoImportance = [false, true];
 
-// updateTodoList();
-
-// const todoList = document.getElementById("todo-list");
-
-// for (const [index, task] of todoTasks.entries()) {
-//     const newTodoTaskElement = createNewTodoItemElement(task, index);
-//     // Add the <li> element to the list
-//     todoList.appendChild(newTodoTaskElement);
-// }
-
-// const addTask = () => {
-
-// };
 
 const updateTodoList = () => {
     const todoList = document.getElementById("todo-list");
@@ -53,7 +40,6 @@ const createNewTodoItemElement = (task, index) => {
 
     newTodoTaskElement.appendChild(completeButtonElement);
 
-
     const importantButtonElement = document.createElement("input");
     importantButtonElement.type = "button";
     importantButtonElement.value = "Important";
@@ -70,12 +56,12 @@ const toggleComplete = (index) => {
     // If it is complete, set it to incomplete. 
     // If it is incomplete, set it to complete.
     if (todoTasksStatus[index] == false) {
-      todoTasksStatus[index] = true;
+        todoTasksStatus[index] = true;
     } else {
       todoTasksStatus[index] = false;
     }
       updateTodoList();
-    };
+};
 
 // Initialize the list
 updateTodoList();
